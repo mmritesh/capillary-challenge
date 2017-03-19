@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 # dependencies
 /capillary-web/node_modules
+/node_modules
 /capillary-backend/node_modules
 
 # e2e
