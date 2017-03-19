@@ -9,4 +9,4 @@ var CapillarySchema   = new Schema({
     editors_choice:String
 });
 
-module.exports = mongoose.model('game', CapillarySchema);
+module.exports = mongoose.model('Games', CapillarySchema);

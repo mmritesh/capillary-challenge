@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'resources/static/dist/')));
 
 var port     = process.env.PORT || 8080; 
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test'); 
+mongoose.connect('mongodb://prithviraju1369:prithviraju1369@ds135690.mlab.com:35690/capillary'); 
 var Capillary     = require('./app/models/capillary-doc');
 
 var router = express.Router();
