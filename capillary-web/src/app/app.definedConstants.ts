@@ -1,5 +1,5 @@
 export class DefinedConstants{
-  public static API_BASE_URL = "http://localhost:8080/api";
+  public static API_BASE_URL = "https://capillary-games.herokuapp.com";//"http://localhost:8080/api";
   public static GET_GAMES = "/getGames";
   public static GET_COUNT = "/count";
 
