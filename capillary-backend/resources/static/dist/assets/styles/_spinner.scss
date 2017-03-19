@@ -1,0 +1,41 @@
+$spinner-primary-color : #002663;
+$spinner-primary-background-color : #F5F5F5;
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@mixin sbs-spinner($key) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $key;
+  height: $key;
+  border-radius: 50%;
+  border: 5px solid $spinner-primary-background-color;
+  border-right: 5px solid $spinner-primary-color;
+  border-bottom: 5px solid $spinner-primary-color;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-large {
+  @include sbs-spinner(80px);
+}
+
+.spinner-medium {
+  @include sbs-spinner(50px);
+}
+
+.spinner-small {
+  @include sbs-spinner(30px);
+}

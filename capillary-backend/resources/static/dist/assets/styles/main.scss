@@ -1,0 +1,60 @@
+@import "spinner";
+body {
+  //background: url("/assets/images/back-image_1.jpg") no-repeat center center fixed;
+  background: url("../images/Customer360-light-bg.png") no-repeat center center fixed;
+  padding-left: 25px;
+  padding-right: 25px;
+  //background-size: cover;
+  //background-color: white;
+}
+
+.top-nav-collapse {
+  background-color: #3F729B !important;
+}
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #3F729B !important;
+  }
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], textarea.materialize-textarea {
+  border-bottom: 1px solid rgba(0,0,0,.12)!important;
+}
+
+.ngx-datatable .datatable-header {
+    display: block;
+    overflow: hidden;
+    background: #e5e5e5;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.datatable-header-inner{
+	    margin-top: 13px;
+}
+
+.ngx-datatable .datatable-body .datatable-body-row > div {
+
+    border-bottom: 2px solid #e5e5e5;
+    text-align: center;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.img-responsive{
+  width: 450px ! important;
+  height: 250px;
+}
+
+.align-left{
+  text-align:left!important;
+  float:left!important;
+}
+.align-right{
+  text-align:right!important;
+  float:right!important;
+}
