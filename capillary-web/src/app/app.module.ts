@@ -8,6 +8,7 @@ import {AppRoutingModule} from "./app.routing";
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { Md2Module }  from 'md2';
 import {Service} from "./service/service";
+import {SharedService} from "./shared";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import {Service} from "./service/service";
     AppRoutingModule,
     Md2Module
   ],
-  providers: [Service],
+  providers: [Service, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

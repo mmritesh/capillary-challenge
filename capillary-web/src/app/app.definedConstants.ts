@@ -12,4 +12,5 @@ export class DefinedConstants{
 
   public static SORT_BY_TITLE = 'title';
   public static SORT_BY_SCORE = 'score';
+  public static SORT_BY_PLATFORM = 'platform';
 }

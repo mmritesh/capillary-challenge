@@ -3,9 +3,12 @@
     <div class="space-50" class="space"></div>
 
 
-    <div *ngIf="gameList?.length > 0">
+    <div *ngIf="gameList?.length > 0 && !sharedService.isAppLoading">
         <span class="glyphicon glyphicon-filter clickable filter" (click)="filterByScore()"></span>
         <span>Order by Score</span>
+
+        <span class="glyphicon glyphicon-filter clickable filter" (click)="filterByPlatform()"></span>
+        <span>Order By Platform</span>
 
         <span class="glyphicon glyphicon-filter clickable filter" (click)="defaultOrder()"></span>
         <span>Default Order</span>
@@ -26,7 +29,10 @@
                             </div>
                         </div>
 
-                        <p class="align-left">Genre: {{game.genre}}</p>
+                        <div class="align-left">
+                            <p class="subtitle">Genre: {{game.genre}}</p>
+                            <p class="subtitle">Platform: {{game.platform}}</p>
+                        </div>
                         <p class="align-right"><button type="button" class="btn btn-primary">Score: <span class="badge">{{game.score}}</span></button></p>
 
                     </div>
@@ -59,4 +65,5 @@
         <p>No Records</p>
     </div>
 
+    <div *ngIf="sharedService.isAppLoading" class="spinner-large"></div>
 </div>

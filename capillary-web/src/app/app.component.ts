@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {Page} from "./model/pagination";
 import {DefinedConstants} from "./app.definedConstants";
+import {SharedService} from "./shared";
 
 @Component({
   selector: 'app-root',
