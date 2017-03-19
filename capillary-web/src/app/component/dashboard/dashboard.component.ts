@@ -11,7 +11,7 @@ import {SharedService} from "../../shared";
 })
 export class DashboardComponent implements OnInit {
 
-    constructor(public router:Router, public leaveService:Service, public sharedService:SharedService) {
+    constructor(public router:Router, public service:Service, public sharedService:SharedService) {
     }
 
     public gameList;
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
         let searchString;
         this.searchString == undefined ? searchString = "" : searchString = this.searchString;
         this.sharedService.isAppLoading = true;
-        this.leaveService.getGamesByName(searchString).subscribe(
+        this.service.getGamesByName(searchString).subscribe(
             response => {
                 this.gameList = response;
                 this.sharedService.isAppLoading = false;

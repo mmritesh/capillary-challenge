@@ -1,6 +1,7 @@
 export class DefinedConstants{
   public static API_BASE_URL = "http://localhost:8080/api";
   public static GET_GAMES = "/getGames";
+  public static GET_COUNT = "/count";
 
   public static ASC = 'ascending';
   public static DESC = 'descending';

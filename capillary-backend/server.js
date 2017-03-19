@@ -45,6 +45,16 @@ router.route('/getGames')
 		.skip(noOfRows * (pageNo-1))
 		.sort([[sortBy, sortOrder]]);
 	});
+router.route('/count')
+	.get(function(req, res) {
+		Capillary.count(function(err, count) {
+			if (err)
+				res.send(err);
+
+			res.json(count);
+			console.log("games count: " + count);
+		});
+	});
 
 router.route('/getGames/:gameName')
 	.get(function(req, res) {

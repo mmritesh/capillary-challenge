@@ -58,5 +58,9 @@ export class Service {
                         .map(this.extractData)
                         .catch(this.handleError);
     }
-
+    getCount (): Observable<any> {
+        return this.http.get(DefinedConstants.API_BASE_URL + DefinedConstants.GET_COUNT )
+            .map(res => res.json())
+            .catch(this.handleError);
+    }
 }
